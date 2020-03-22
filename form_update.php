@@ -15,15 +15,8 @@
     $result = $connect->query($query);
 	$row = $result -> fetch_assoc();
 ?>
-	<form action="update.php" method="POST">		
+	<form action="update.php" method="GET">		
 		<table>
-            <tr>
-				<td><label for="no_kk">NIK</label></td>
-                <td>:</td>
-				<td>
-					<input type="text" name="no_kk" id="no_kk" value="<?php echo $row['no_kk'] ?>">
-				</td>					
-			</tr>
 			<tr>
 				<td><label for="nama">Nama</label></td>
                 <td>:</td>
@@ -53,6 +46,7 @@
 			</tr>	
 			<tr>
 				<td></td>
+				<td><input type="hidden" name ="no_kk" value"<?php echo $row['no_kk']?>"></td>
 				<td><input type="submit" value="Simpan"></td>					
 			</tr>				
 		</table>

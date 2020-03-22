@@ -54,8 +54,8 @@
             echo "<td>".$data['tgl']."</td>";
             echo "<td>".$data['pendidikan']."</td>";
             echo "<td>".$data['pekerjaan']."</td>";
-            echo "<td><a href='form_update.php?ID_User=".$data['no_kk']."'>Edit</a></td>";
-            echo "<td><a href='delete.php?ID_User=".$data['no_kk']."' onlick='return confirm(\"apakah anda yakin ingin menghapus data?\")'>Hapus</a></td>";
+            echo "<td><a href='form_update.php?no_kk=".$data['no_kk']."'>Edit</a></td>";
+            echo "<td><a href='delete.php?no_kk=".$data['no_kk']."' onlick='return confirm(\"apakah anda yakin ingin menghapus data?\")'>Hapus</a></td>";
             echo "</tr>";
         }
     ?>

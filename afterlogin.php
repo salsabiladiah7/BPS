@@ -32,7 +32,7 @@
 </nav>
 
 <div class="container" style="margin-top:30px">
-<center><h1>Data Statistika Penduduk</h1>
+<center><h1>Data Statistik Penduduk</h1>
 <table bgcolor=#a7dbd8 border="1" width=50%></center>
     <tr>
         <th bgcolor=#69d2e7>NIK</th>

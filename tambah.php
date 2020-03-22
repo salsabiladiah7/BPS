@@ -19,7 +19,7 @@
             <label for="tempat">TEMPAT LAHIR:</label>
             <input type="text" name="tempat" placeholder="ENTER TEMPAT LAHIR"><br>
             <label for="tanggal">TANGGAL LAHIR:</label>
-            <input type="text" name="tgl" placeholder="YY-MM-DD"><br>
+            <input type="text" name="tgl" placeholder="DD-MM-YYYY"><br>
             <label for="pendidikan">PENDIDIKAN:</label>
             <input type="text" name="pendidikan" placeholder="ENTER YOUR PENDIDIKAN"><br>
             <label for="pekerjaan">PEKERJAAN:</label>

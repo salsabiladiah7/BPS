@@ -1,21 +1,21 @@
 <?php
     include 'koneksi.php';
-    $nik = $_POST['no_kk'];
-    $nama = $_POST['nama'];
-    $tempat = $_POST['tempat'];
-    $tgl = $_POST['tgl'];
-    $pendidikan = $_POST['pendidikan'];
-    $pekerjaan = $_POST['pekerjaan'];
+    $nik = $_GET['no_kk'];
+    $nama = $_GET['nama'];
+    $tempat = $_GET['tempat'];
+    $tgl = $_GET['tgl'];
+    $pendidikan = $_GET['pendidikan'];
+    $pekerjaan = $_GET['pekerjaan'];
 
-    $query = "UPDATE data_pd SET no_kk='$nik', nama='$nama', tgl='$tgl', pendidikan='$pendidikan' pekerjaan='$pekerjaan' WHERE no_kk='$nik'";
-    $result = $connect->query($query);
+    $query = "UPDATE data_pd SET nama='$nama', tempat='$tempat', tgl='$tgl', pendidikan='$pendidikan', pekerjaan='$pekerjaan' WHERE no_kk='$nik'";
+    $result = mysqli_query($connect,$query);
     $num = mysqli_affected_rows($connect);
 
     if($num>0){
-        echo "Berhasil Edit Data<br>";
+        echo "Berhasil Edit Data";
     }
     else{
-        echo "Gagal Edit Data<br>";
+        echo "Gagal Edit Data";
     }
-    echo "<a href='input_tampil.php'>Lihat Data</a>";
+    echo "<a href='afterlogin.php'>Lihat Data</a>";
 ?>
